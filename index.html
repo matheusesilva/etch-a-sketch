@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link href="style.css" rel="stylesheet">
+    <link type="image/x-icon" href="./img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Etch a Sketch</h1>
+    <div class="firstContainer">
+        <div class="container"></div>
+        <div class="slider">
+            <p id="gridSize">16x16</p>
+            <input id="slider" type="range" max="100" min="2" value="16">
+            <div class="radioButton">
+                <p id="color">Choose your pixels color:</p>
+                <input id="selectorWhite" type="radio" value="white" name="color" checked>
+                <label for="selectorWhite">White</label>
+                <input id="selectorRandom" type="radio" value="random" name="color">
+                <label for="selectorRandom">Random</label>
+            </div>
+            <button id="clearButton">Clear Sketch</button>
+        </div>
+    </div>
+    <script src="javascript.js"></script>   
+</body>
+</html>
